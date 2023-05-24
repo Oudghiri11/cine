@@ -1,0 +1,249 @@
+.body{
+                          
+}
+/* Stream Component */
+.stream {
+                          font-family: Arial, sans-serif;
+                          background-color: #000000; /* Updated background color */
+                        }
+                        
+                        /* Header */
+                        .header {
+                          background-color: #222;
+                          padding: 20px;
+                          color: #fff;
+                        }
+                        
+                        .header-content {
+                          display: flex;
+                          justify-content: space-between;
+                          align-items: center;
+                        }
+                        
+                        .header-content span {
+                          font-size: 24px;
+                          font-weight: bold;
+                        }
+                        
+                        .header-content form {
+                          display: flex;
+                          align-items: center;
+                        }
+                        
+                        .header-content input[type="text"] {
+                          padding: 8px;
+                          border-radius: 4px;
+                          border: none;
+                          margin-right: 8px;
+                        }
+                        
+                        .header-content button[type="submit"] {
+                          padding: 8px 16px;
+                          border-radius: 4px;
+                          border: none;
+                          background-color: #f44336;
+                          color: #fff;
+                          cursor: pointer;
+                          transition: background-color 0.3s;
+                        }
+                        
+                        .header-content button[type="submit"]:hover {
+                          background-color: #e53935;
+                        }
+                        
+                        /* Hero */
+                        .hero {
+                          position: relative;
+                          height: 600px;
+                          background-position: center;
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                        }
+                        
+                        .hero-content {
+                          text-align: center;
+                          max-width: 800px;
+                          padding: 20px;
+                          color: #fff;
+                        }
+                        
+                        .button {
+                          padding: 12px 24px;
+                          border-radius: 4px;
+                          border: none;
+                          background-color: #f44336;
+                          color: #fff;
+                          cursor: pointer;
+                          transition: background-color 0.3s;
+                          font-weight: bold;
+                          text-transform: uppercase;
+                        }
+                        
+                        .button:hover {
+                          background-color: #e53935;
+                        }
+                        
+                        .hero-title {
+                          font-size: 32px;
+                          margin-top: 16px;
+                        }
+                        
+                        .hero-overview {
+                          font-size: 18px;
+                          margin-top: 16px;
+                        }
+                        
+                        /* Slider */
+                        .slider-container {
+                          max-width: 1000px;
+                          margin: 0 auto;
+                        }
+                        
+                        .slick-slider {
+                          position: relative;
+                          display: block;
+                          box-sizing: border-box;
+                          user-select: none;
+                          touch-action: pan-y;
+                          padding: 10px;
+                        }
+                        
+                        .slick-list {
+                          position: relative;
+                          display: block;
+                          overflow: hidden;
+                          margin: 0;
+                          padding: 0;
+                        }
+                        
+                        .slick-slide {
+                          float: left;
+                          height: 100%;
+                          min-height: 1px;
+                          display: none;
+                        }
+                        
+                        .slick-slide img {
+                          width: 100%;
+                          height: auto;
+                          object-fit: cover;
+                          border-radius: 8px;
+                        }
+                        
+                        .slick-dots {
+                          position: absolute;
+                          bottom: 0;
+                          margin: 0;
+                          padding: 10px;
+                          list-style: none;
+                          text-align: center;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                        }
+                        
+                        .slick-dots li {
+                          display: inline-block;
+                          margin: 0 4px;
+                        }
+                        
+                        .slick-dots li button {
+                          display: block;
+                          width: 10px;
+                          height: 10px;
+                          border-radius: 50%;
+                          border: none;
+                          background-color: #ccc;
+                          cursor: pointer;
+                          transition: background-color 0.3s;
+                          padding: 0;
+                          overflow: hidden;
+                          text-indent: -9999px;
+                        }
+                        
+                        .slick-dots li button:hover {
+                          background-color: #888;
+                        }
+                        
+                        .slick-dots li.slick-active button {
+                          background-color: #f44336;
+                        }
+                        
+                        /* Container */
+                        .container {
+                          display: grid;
+                          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                          grid-gap: 20px;
+                          padding: 20px;
+                        }
+                        
+                        .movie-card {
+                          background-color: #000000;
+                          border-radius: 8px;
+                          overflow: hidden;
+                          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                          transition: box-shadow 0.3s;
+                          color: #ffffff; /* Set text color to white */
+                        }
+                        .movie-card:hover {
+                          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                        }
+                        .movie-card .movie-info {
+                          padding: 10px;
+                          background-color: rgba(0, 0, 0, 0.8); /* Set background color of the overlay */
+                          opacity: 0;
+                          transition: opacity 0.3s;
+                        }
+                        
+                        .movie-card .movie-title {
+                          font-size: 16px;
+                          font-weight: bold;
+                          margin: 8px 0;
+                          color: #ffffff; /* Set text color of the title to white */
+                        }
+                        
+                        .movie-card .movie-overview {
+                          font-size: 14px;
+                          margin-bottom: 8px;
+                          color: #ffffff; /* Set text color of the overview to white */
+                        }
+                        
+                        .movie-card .movie-release-date {
+                          font-size: 12px;
+                          color: #ffffff;
+                        }
+                        .movie-card:hover .movie-info {
+                          opacity: 1;
+                        }
+                        
+                        /* Movie Genres */
+                        .movie-genres {
+                          display: flex;
+                          justify-content: center;
+                          margin-top: 20px;
+                          color: #ffffff; /* Set text color of the genres to white */
+                        }
+                        
+                        .movie-genres span {
+                          padding: 8px 12px;
+                          margin-right: 8px;
+                          background-color: #f44336;
+                          color: #ffffff; /* Set text color of the genres to white */
+                          border-radius: 4px;
+                          font-size: 14px;
+                        }
+                        
+                        
+                        
+                        /* Title */
+                        .title {
+                          font-size: 24px;
+                          font-weight: bold;
+                          margin-bottom: 20px;
+                          text-align: center;
+                          color: #ffffff; /* Set text color to white */
+                        }
+                        
